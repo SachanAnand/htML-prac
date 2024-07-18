@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+        <title>
+            first website
+        </title>
+        <style>
+            .photo{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                vertical-align: middle;
+                object-fit: cover;
+                margin-right: 5px;
+            }
+            .search{
+                border: none;
+                vertical-align: middle;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-size: 18px;
+            }
+            .twitter{
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 5px;
+                width: 370px;
+                border-radius: 8px;
+                box-shadow: 0 1px 2px grey;
+            }
+            .Tweet{
+                padding-top:9px ;
+                padding-bottom:9px ;
+                padding-left:15px ;
+                padding-right:15px ;
+                color: white;
+                background-color: rgb(39, 106, 199);
+                border-radius: 30px;
+                border: none;
+                vertical-align: middle;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .Tweet:hover{
+                font-size: 18px;
+                padding-top:9px ;
+                padding-bottom:9px ;
+                padding-left:15px ;
+                padding-right:15px ;
+                color: white;
+                background-color: rgb(39, 106, 199);
+                border-radius: 30px;
+                border: none;
+                vertical-align: middle;
+                font-weight: bold;
+                cursor: pointer;
+                opacity: 0.8;
+            }
+            .Tweet:active{
+                font-size: 18px;
+                padding-top:9px ;
+                padding-bottom:9px ;
+                padding-left:15px ;
+                padding-right:15px ;
+                color: white;
+                background-color: rgb(39, 106, 199);
+                border-radius: 30px;
+                border: none;
+                vertical-align: middle;
+                font-weight: bold;
+                cursor: pointer;
+                opacity: 0.6;
+            }
+            .google-search-logo{
+                text-align: center;
+                
+            }
+            .google-search{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 400px;
+                font-size: 18px;
+                border-radius: 25px;
+                border: none;
+                box-shadow:0 1px 6px rgba(0, 0, 0, 0.2);
+                display: block;
+                margin-bottom: 30px;
+            }
+            .Google{
+                display:block;
+                width: 190px;
+                height: 99px;
+                object-fit: contain;
+                margin-bottom: 5px;
+                margin-left: 120px;
+                object-fit: cover;
+            }
+            .google-button1{
+                background-color: rgb(245, 245, 245);
+                border: none;
+                font-size: 15px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-left: 59px;
+
+            }
+            .google-button2{
+                background-color: rgb(245, 245, 245);
+                border: none;
+                font-size: 15px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+            }
+            .review{
+                width: 300px;
+                display: inline-block;
+                font-size: 20px;
+                vertical-align: middle;
+            }
+            .first-name{
+                border-radius: 6px;
+                width: 148px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 5px;
+                margin-bottom: 8px;
+                vertical-align: middle;
+                border-color: rgb(200, 200, 200);
+            }
+            .last-name{
+                border-radius: 6px;
+                width: 148px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 5px;
+                vertical-align: middle;
+                margin-bottom: 8px;
+                border-color: rgb(200, 200, 200);
+            }
+            .mail{
+                border-radius: 6px;
+                display: block;
+                width: 300px;
+                margin-bottom: 8px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                border-color: rgb(200, 200, 200);
+                padding-left: 8px;
+                margin-left: 5px;
+            }
+            .sign-up{
+                border-radius: 6px;
+                color: white;
+                font-weight: bold;
+                background-color: rgb(76, 106, 196);
+                width: 311px;
+                margin-left: 5px;
+                vertical-align: middle;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                border: none;
+                cursor: pointer;
+            }
+            .ride-req{
+                font-size: 25px;
+                font-family: Arial;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                margin-bottom: 7px;
+            }
+            .pickup{
+                display: block;
+                background-color: lightgray;
+                padding-left: 7px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                margin-bottom: 3px;
+                border: none;
+                width: 250px;
+            }
+            .destination{
+                display: block;
+                background-color: lightgray;
+                padding-left: 7px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                border: none;
+                margin-bottom: 20px;
+                width: 250px;
+            }
+            .req-now{
+                padding-top: 14px;
+                padding-bottom: 14px;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: white;
+                background-color: black;
+                border: none;
+                cursor: pointer;
+            }
+            .later{
+                border: none;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                color: black;
+                background-color: lightgray;
+                padding-left: 10px;
+                padding-right: 10px;
+                cursor: pointer;
+            }
+            .div-example{
+                display: inline-block;
+            }
+            .profile1{
+                margin-right: 10px;
+                box-shadow: 1px 1px 10px grey;
+                display: inline-block;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .face1{
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+
+            }
+            .mf2{
+                font-size: 15px;
+                color: grey;
+                margin-bottom: 6px;
+                margin-top: 4px;
+            }
+            .oliver{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 2px;
+                margin-top: 2px;
+            }
+            .profile2{
+                margin-right: 10px;
+                box-shadow: 1px 1px 10px grey;
+                display: inline-block;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .face2{
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+            }
+            .mf3{
+                font-size: 15px;
+                color: grey;
+                margin-bottom: 6px;
+                margin-top: 4px;
+            }
+            .mimi{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 2px;
+                margin-top: 2px;
+            }
+            .profile3{
+                box-shadow: 1px 1px 10px grey;
+                display: inline-block;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .face3{
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+            }
+            .mf4{
+                font-size: 15px;
+                color: grey;
+                margin-bottom: 6px;
+                margin-top: 4px;
+            }
+            .rex{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 2px;
+                margin-top: 2px;
+            }
+            .af{
+                color: white;
+                background-color: rgb(72, 72, 174);
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+            .red{
+                display: inline-block;
+                margin-right: 10px;
+                background-color: red;
+                width: 100px;
+                height: 100px;
+            }
+            .green{
+                display: inline-block;
+                background-color: green;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            .youtube-music{
+                display: inline-block;
+                background-color: rgb(34, 33, 33);
+                padding-left: 14px;
+                padding-right: 14px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                width: 330px;
+            }
+            .install-music{
+                font-family: arial;
+                font-size: 20px;
+                color: white;
+                font-weight: bolder;
+            }
+            .discription-music{
+                font-family: arial;
+                color: grey;
+            }
+
+
+            .insta-layout{
+                height: 64px;
+                margin-top: 8px;
+                display: inline-block;
+            }
+            .pic{
+                height: 64px;
+                display: inline-block;
+
+            }
+            .pic-1{
+                padding: 4px 4px 4px 4px;
+                vertical-align: middle;
+                border-radius: 50%;
+                width: 55px;
+                height: 55px;
+                object-fit: cover;
+            }
+            .name-and-stuff{
+                width: 180px;
+                height: 64px;
+                vertical-align: top;
+                display: inline-block;
+            }
+            .insta-layout-name{
+                font-weight: bold;
+                padding-bottom: 4px;
+                font-family: Roboto , Arial;
+                display: block;
+            }
+            .the-cat-div{
+                padding-bottom: 4px;
+                display: block;
+            }
+            .popular-div{
+                display: block;
+            }
+            .oliver-2{
+                margin: 0%;
+            }
+            .popular{
+                font-size: 14px;
+                font-family: Roboto , Arial;
+                color: grey;
+                margin: 0%
+            }
+            .the-cat{
+                font-family: Roboto , Arial;
+                color: grey;
+                margin: 0%;
+            }
+            .follow{
+                margin: auto;
+                display: inline-block;
+            }
+            .follow-button{
+                display: block;
+                color: white;
+                background-color: rgb(63, 129, 186);
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: none;
+                border-radius: 5px;
+                
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <p>
+            paragraph of text 
+        </p>
+        <button>
+            hello
+        </button>
+
+        <a href="https://www.youtube.com/">Link to youtube</a><br><br>
+
+        <div class="twitter">
+        <img class="photo" src="thumbnails/thumbnail-1.webp">
+        <input class="search" type="text" placeholder="What's happening?">
+        <button class="Tweet">Tweet</button></div>
+        <br>
+        <br>
+        <div class="google-search-logo">
+        <img class="Google" src="thumbnails/googleimg.png"></div>
+        <div class="google-search>">
+        <input class="google-search" placeholder="Search Google or type a URL">
+        </div>
+
+        <button class="google-button1"> Google Search </button>
+        <button class="google-button2"> I'm Feeling Lucky </button>
+        <br>
+        <p class="review">
+            Thanks for chatting with our coustomer support. Would you like to take our quick survey?
+        </p>
+        <button>
+            Yes
+        </button>
+        <button>
+            No
+        </button>
+        <br><br>
+        <input class="first-name" type="text" placeholder="First name">
+        <input class="last-name" type="text" placeholder="Last name">
+        <input class="mail" type="email" placeholder="Email">
+        <button class="sign-up">
+            Sign Up
+        </button>
+        <br><br>
+        <p class="ride-req">Request a ride now</p>
+        <input class="pickup" placeholder="Enter pickup location">
+        <input class="destination" placeholder="Enter destination">
+        <button class="req-now">Request now</button>
+        <button class="later">Schedule for later</button>
+        <br><br>
+        <div class="div-example">
+            This is div
+        </div><br><br>
+        <div class="profile1">
+            <img class="face1" src="photos/profile1.jpeg">
+            <p class="oliver">Oliver</p>
+            <p class="mf2">2 mutual friends</p>
+            <button class="af">Add Friend</button>
+        </div>
+        <div class="profile2">
+            <img class="face2" src="photos/photo2.jpeg">
+            <p class="mimi">Mimi</p>
+            <p class="mf3">3 mutual friends</p>
+            <button class="af">Add Friend</button>
+        </div>
+        <div class="profile3">
+            <img class="face3" src="photos/photo3.jpeg">
+            <p class="rex">Rex</p>
+            <p class="mf4">4 mutual friends</p>
+            <button class="af">Add Friend</button>
+        </div>
+        <br><br>
+        <div class="red"></div>
+        <div class="green"></div>
+        <br>
+        <div class="youtube-music">
+            <p class="install-music">
+                Install YouTube music
+            </p>
+            <p class="discription-music">
+                Add YouTube Music to your desktop for quick and easy access
+            </p>
+        </div>
+        <br>
+
+        <div class="insta-layout">
+            <div class="pic">
+                <img class ="pic-1" src="photos/profile1.jpeg">
+            </div>
+            <div class="name-and-stuff">
+                <div class="insta-layout-name">
+                    <p class="oliver-2">Oliver</p>
+                </div>
+                <div class="the-cat-div">
+                    <p class="the-cat">
+                        The cat
+                    </p>
+                </div>
+                <div class="popular-div">
+                    <p class="popular">
+                        Popular
+                    </p>
+                </div>
+            </div>
+            <div class="follow">
+                <button class="follow-button">Follow</button>
+            </div>
+        </div>
+        <br>
+    </body>
+
+</html>
