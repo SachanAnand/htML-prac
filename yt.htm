@@ -4,78 +4,78 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
 
     <title>
         YouTube.com clone
     </title>
-    <style>
 
-        .video-grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 15px;
-            row-gap: 40px;
-
-        }
-
-
-        p{
-            margin-top: 0%;
-            margin-bottom: 0%;
-            font-family: Roboto, Arial;
-             /* this is called font stack just in case roboto fails to load from google our backup font arial will work*/
-        }
-
-        .search-bar{
-            display: block;
-            font-size: 20px;
-            width: 150px;
-            margin-left: 20px;
-            margin-bottom: 10px;
-        }
-
-
-        .thumbnail-row{
-            margin-bottom: 12px;
-        }
-        .thumbnail{
-            width: 100%;
-            object-fit: cover;
-        }
-        .video-title{
-            margin-bottom: 12px;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-        }
-        .video-author,
-        .video-stats{
-            font-size: 12px;
-            color: rgb(96, 96, 96);
-            display: inline-block;
-        }
-        .video-info-grid{
-            display: grid;
-            grid-template-columns: 50px 1fr;
-        }
-        .channel-img{
-            display: inline-block;
-            object-fit: cover;
-            border-radius: 50%;
-            width: 37px;
-        }
-        
-        
-    </style>
 </head>
 <body>
-    <input class="search-bar" type="text" placeholder="Search">
+    <div class="header">
+        <div class="left-section">
+            
+            <img class="menu-img" src="photos/hamburger-menu.svg">
+            <img class="yt-logo-img" src="photos/youtube-logo.svg">
+            
+        </div>
+
+        <div class="mid-section">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search">
+                <img class="search-img" src="photos/search.svg">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-img" src="photos/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+
+        <div class="right-section">
+            <img class="upload-img" src="photos/upload.svg">
+            <img class="youtube-apps-img" src="photos/youtube-apps.svg">
+            <div class="notifications-icons-container">
+            <img class="notifications-img" src="photos/notifications.svg">
+            <div class="notifications-count">3</div>
+            </div>
+            <img class="profile1-img" src="photos/profile1.jpeg">
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img src="photos/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="photos/explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link"> 
+            <img src="photos/subscriptions.svg"><div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link"> 
+            <img src="photos/originals.svg"><div>Originals</div>
+        </div>
+        <div class="sidebar-link"> 
+            <img src="photos/youtube-music.svg"><div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link"> 
+            <img src="photos/library.svg"><div>Library</div>
+        </div>
+    </div>
     
     <div class="video-grid">
         <div class="video-preview">
             <div class="thumbnail-row">
+                
                 <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                <div class="video-time">
+                    14:20
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -103,6 +103,9 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                <div class="video-time">
+                    08:22
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -132,7 +135,11 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+                <div class="video-time">
+                    09:13
+                </div>
             </div>
+
             <div class="video-info-grid">
                 <div class="channel-picture">
                    <img class="channel-img" src="channel-3.jpeg">
@@ -161,6 +168,9 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+                <div class="video-time">
+                    22:09
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -190,6 +200,9 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+                <div class="video-time">
+                    11:17
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -219,6 +232,9 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+                <div class="video-time">
+                    19:59
+                </div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -242,6 +258,73 @@
             </div>
     
         </div>
+
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+                <div class="video-time">
+                    10:13
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                   <img class="channel-img" src="channel-6.jpeg">
+                </div>
+    
+                <div class="video-info">
+    
+                    <p class="video-title">
+                        Anything You Can Fit In The Circle I'll Pay For
+                    </p>
+                    <p class="video-author">
+                        MrBeast
+                    </p><br>
+            
+                    <p class="video-stats">
+                        141M views &#183; 1 year ago
+                    </p>
+                </div>
+    
+            </div>
+    
+        </div>
+
+
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+                <div class="video-time">
+                    07:12
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                   <img class="channel-img" src="channel-6.jpeg">
+                </div>
+    
+                <div class="video-info">
+    
+                    <p class="video-title">
+                        Anything You Can Fit In The Circle I'll Pay For
+                    </p>
+                    <p class="video-author">
+                        MrBeast
+                    </p><br>
+            
+                    <p class="video-stats">
+                        141M views &#183; 1 year ago
+                    </p>
+                </div>
+    
+            </div>
+    
+        </div>
+
+
+
+    </div>
     
 </body>
-</html> 
+</html>
