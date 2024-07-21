@@ -1,0 +1,130 @@
+.search-bar{
+    flex: 1;
+    height: 36.5px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
+    font-size: 16px;
+    width: 0;
+}
+.search-bar::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 16px;
+}
+
+.header{
+    background-color: white;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgrey;
+    z-index: 100;
+}
+
+.left-section{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.mid-section{
+    display: flex;
+    flex: 1;
+    margin-right: 29px;
+    margin-left: 70px;
+    max-width: 470px;
+    align-items: center;
+
+    
+}
+.right-section{
+    align-items: center;
+    display: flex;
+    width: 182px;
+    justify-content: space-between;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+.search{
+    position: relative;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    height: 40px;
+    width: 60px;
+    background-color: rgb(233, 230, 230);
+    border-color: lightgray;
+    margin-left: -3px;
+    margin-right: 8px;
+}
+.search-img{
+    height: 24px;
+    margin-top: 4px;
+
+}
+.menu-img{
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 24px;
+    width: 24px;
+}
+.yt-logo-img{
+    width: 90px;
+    height: 20px;
+}
+.upload-img{
+    height: 24px;
+    width: 24px;
+}
+.notifications-img{
+    height: 24px;
+    width: 24px;
+}
+.youtube-apps-img{
+    height: 24px;
+    width: 24px;
+}
+.profile1-img{
+    object-fit: cover;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.voice-search-img{
+    height: 24px;
+    width: 30px;
+    vertical-align: middle;
+    
+}
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 1px 6px;
+    border: none;
+}
+
+.notifications-icons-container{
+    position: relative;
+}
+
+.notifications-count{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(186, 21, 21);
+    border-radius: 50%;
+    color: white;
+    font-family: ROboto, Arial;
+    font-size: 9px;
+    padding: 2px 5px 2px 5px;
+}
