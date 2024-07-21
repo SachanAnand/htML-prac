@@ -1,0 +1,54 @@
+.sidebar{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 101;
+    padding-top: 5px;
+}
+
+.sidebar-link{
+    cursor: pointer;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.sidebar-link:hover{
+    background-color: rgb(226, 225, 225);
+}
+
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+
+}
+
+.sidebar-link div{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+
+}
+
+.voice-search-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -32px;
+    opacity: 0;
+    transition: 0.3;
+    pointer-events: none;
+}
+
+.voice-search-button:hover .tooltip{
+    cursor: pointer;
+    opacity: 1;
+}
